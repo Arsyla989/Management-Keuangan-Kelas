@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #0F172A;
+  --surface: #1E293B;
+  --accent: #2563EB;
+  --accent-glow: #3B82F6;
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+}
+
+/* Custom Sleek CSS Styles mapped from Design HTML */
+.sidebar {
+  background-color: #090D16 !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.sleek-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.sleek-nav-item:hover {
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.sleek-nav-item.active {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+  color: var(--text-main) !important;
+  border-left: 4px solid var(--accent) !important;
+}
+
+/* Rounded Cards */
+.sleek-card {
+  background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sleek-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.12), 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgba(59, 130, 246, 0.25);
+}
+
+/* Stat fields styling */
+.sleek-stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: var(--text-main);
+}
+
+.sleek-stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Elegant Buttons */
+.sleek-btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-glow)) !important;
+  color: white !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.sleek-btn-primary:hover {
+  transform: translateY(-1.5px) !important;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45) !important;
+}
+
+.sleek-btn-primary:active {
+  transform: translateY(0) !important;
+}
+
+/* Glassmorphism panel styling */
+.sleek-glass {
+  background: rgba(30, 41, 59, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Status badges */
+.sleek-status-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sleek-status-paid {
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #10B981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+}
+
+.sleek-status-pending {
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: #F59E0B !important;
+  border: 1px solid rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
+
+/* Smooth motion custom adjustments */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

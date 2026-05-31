@@ -1,0 +1,6 @@
+{
+  "name": "Manajemen Keuangan Bendahara Kelas",
+  "description": "Aplikasi modern untuk mengelola kas kelas digital secara efisien dengan sistem multi-role (Bendahara & Siswa), visualisasi keuangan, dan manajemen data transaksi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
